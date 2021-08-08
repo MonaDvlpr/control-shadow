@@ -1,0 +1,45 @@
+:root {
+	--offsetX: 0px;
+	--offsetY: 0px;
+	--blur: 0px;
+	--spread: 0px;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	min-height: 100vh;
+    font-family: sans-serif;
+}
+.wrapper{
+    width:20rem;
+}
+.wrapper h1,.controls{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.wrapper h1,.controls, .control{
+    margin: 0 0 1rem;
+}
+.controls button{
+    background-color: #eeaa55;
+    border-radius:.5rem;
+    border:none;padding:.5rem;
+    color:#fff;
+    cursor: pointer;
+}
+#box{
+    background-color: #11aeea;
+    font-weight: bold;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20rem;
+    height:10rem;
+    margin-top:3rem;
+    box-shadow: var(--offsetX) var(--offsetY) var(--blur) var(--spread)  rgba(210, 10, 220, 0.5);
+}
