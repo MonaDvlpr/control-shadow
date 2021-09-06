@@ -1,15 +1,19 @@
 (function (){
     const buttons = document.querySelectorAll('.controls button')
+    const ranges = document.querySelectorAll('.controls input')
 
     function shadowControl(e){
-        const suffix = this.dataset.sizing;
         document.documentElement.style.setProperty(
             `--${this.name}`,
-            this.value++ + suffix
+            this.value++ + 'px'
         );
+        console.log(this.value)
     }
 
-    buttons.forEach(button=>{
-        button.addEventListener('click',shadowControl)
+    // buttons.forEach(button=>{
+    //     button.addEventListener('click',shadowControl)
+    // })
+    ranges.forEach(range=>{
+        range.addEventListener('change',shadowControl)
     })
 })();

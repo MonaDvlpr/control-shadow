@@ -40,6 +40,6 @@ body {
     justify-content: center;
     width:20rem;
     height:10rem;
-    margin-top:3rem;
+    margin-top:5rem;
     box-shadow: var(--offsetX) var(--offsetY) var(--blur) var(--spread)  rgba(210, 10, 220, 0.5);
 }
